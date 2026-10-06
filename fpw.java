@@ -8,6 +8,7 @@
 		
 		for (ArquivoCobrancaPagamentoVO arquivoCobrancaPagamento: listaAgrupadaPorVerba){
 			
+            // fix-teste:  Comentário - Apenas testando BRANCHES no git!
 			tipoLancamento = pagamentoDao.obterTipoLancamentoPorCodigoRetornoFpw(arquivoCobrancaPagamento.getCodigoVerba(), conn);
 			
 			if (tipoLancamento.equals(EnumDebitoCredito.DEBITO)) { 
